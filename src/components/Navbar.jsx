@@ -13,13 +13,15 @@ export default function Navbar() {
             IN TECH <br /> COMPUTERIZER
           </h3>
         </div>
-        <div className="flex gap-5">
-          <Link to={"/about"}>
-            <Button isPrimary>About us</Button>
-          </Link>
-          <Link to={"/products"}>
-            <Button isPrimary>Product</Button>
-          </Link>
+        <div className="hidden md:block">
+          <div className="flex gap-5">
+            <Link to={"/about"}>
+              <Button isPrimary>About us</Button>
+            </Link>
+            <Link to={"/products"}>
+              <Button isPrimary>Product</Button>
+            </Link>
+          </div>
         </div>
       </nav>
     </header>

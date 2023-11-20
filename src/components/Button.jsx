@@ -8,7 +8,7 @@ export default function Button(props) {
       ${props.className && props.className} 
       ${
         props.isPrimary &&
-        "bg-white-1 text-black-2 border border-black-1 hover:text-white-2 hover:bg-primary hover:border-none duration-300 transition-all"
+        "bg-white-1 text-black-2 border border-black-1 hover:text-white-2 hover:bg-primary hover:border-none duration-500 transition-all"
       } 
       font-bold text-sm rounded-full`}
     >
