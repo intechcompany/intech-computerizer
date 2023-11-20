@@ -14,7 +14,8 @@ export default {
         'secondary': '#F2E1DE',
         'black-1': '#000000',
         'black-2': '#232323',
-        'black-3': '#2C2C2C'
+        'black-3': '#2C2C2C',
+        'gray-1': '#F2E1DE'
       },
 
       fontFamily: {
