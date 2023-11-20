@@ -16,10 +16,10 @@ export default function Hero() {
         </div>
         <div className="lg:w-1/2">
           <div className="grid grid-cols-6 gap-5">
-            <div className="col-start-2 col-span-2  ...">
+            <div className="col-start-1 md:col-start-2 col-span-2  ...">
               <img src={imgHero3} alt="" />
             </div>
-            <div className="bg-gray-1 rounded-xl col-end-7 col-span-3 ...">
+            <div className="bg-gray-1 rounded-xl col-end-7 col-span-4 md:col-span-3 ...">
               <img src={imgHero2} alt="" />
             </div>
             <div className="rounded-xl flex flex-col gap-6 md:gap-16 lg:gap-8 xl:gap-16 items-center justify-center bg-primary col-start-1 col-span-2 ...">
