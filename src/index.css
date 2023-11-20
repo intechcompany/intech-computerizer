@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+  body {
+    @apply bg-white-1 font-montserrat;
+  }
+}
+
+@layer utilities {
+  .section {
+    @apply container mx-auto;
+  }
+}
