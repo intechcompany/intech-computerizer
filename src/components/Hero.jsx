@@ -20,7 +20,7 @@ export default function Hero() {
               <img src={imgHero3} alt="" />
             </div>
             <div className="bg-gray-1 rounded-xl col-end-7 col-span-4 md:col-span-3 ...">
-              <img src={imgHero2} alt="" />
+              <img src={imgHero2} alt="" className="rounded-tr-xl" />
             </div>
             <div className="rounded-xl flex flex-col gap-6 md:gap-16 lg:gap-8 xl:gap-16 items-center justify-center bg-primary col-start-1 col-span-2 ...">
               <img src={iconDesk} alt="" className="w-10 md:w-16" />
