@@ -46,10 +46,10 @@ const ProductPage = () => {
     <>
       <Navbar />
       <main className="section mt-14">
-        <section className="section px-5 font-semibold flex flex-row justify-between items-center">
+        <section className="section px-5 font-semibold flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center">
           <h2 className="text-black-2 text-3xl">All Product</h2>
-          <div className="flex gap-5 items-center">
-            <div className="flex items-center gap-2">
+          <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-5 items-center">
+            <div className="flex  items-center gap-2">
               <p className="text-sm">Sort By:</p>
               <select
                 className="border w-48 border-black rounded-3xl px-3 py-2 capitalize"
@@ -82,7 +82,7 @@ const ProductPage = () => {
             </div>
           </div>
         </section>
-        <section className="hide-scroll section px-5 mt-10 w-full flex flex-wrap gap-10 justify-center">
+        <section className="h-[50rem] py-10 md:py-0 hide-scroll overflow-y-auto md:h-full section px-5 mt-10 w-full flex flex-wrap gap-10 justify-center">
           {!filteredProducts && <p className="py-5">Loading...</p>}
           {filteredProducts &&
             filteredProducts.map((item, i) => (
@@ -94,6 +94,7 @@ const ProductPage = () => {
                 id={item._id}
               />
             ))}
+          
         </section>
       </main>
     </>
