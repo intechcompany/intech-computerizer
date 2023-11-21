@@ -17,11 +17,11 @@ export default function Footer() {
                   <img src={iconTelp} alt="icon telp" width={16} height={16} />
                 </span>
                 <Link
-                  to={"https://wa.me/082285538255"}
+                  to={"https://wa.me/+628228553825"}
                   target="_blank"
                   className="font-medium hover:underline"
                 >
-                  082285538255
+                  08228553825
                 </Link>
               </div>
               <div className="text-white-3 flex items-center gap-3">

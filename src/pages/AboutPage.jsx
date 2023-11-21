@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import AboutGridHero from "../components/AboutGridHero";
 import imgos from "../assets/organizationalstructure.png";
+import Footer from "../components/Footer";
 
 const AboutPage = () => {
   return (
@@ -78,6 +79,7 @@ const AboutPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
