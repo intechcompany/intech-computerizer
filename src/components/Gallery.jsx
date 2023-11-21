@@ -6,11 +6,11 @@ import CardGallery3 from "./CardGallery3";
 import CardGallery4 from "./CardGallery4";
 import CardGallery5 from "./CardGallery5";
 
-import img1 from "../assets/img-gallery1.png";
-import img2 from "../assets/img-gallery2.png";
-import img3 from "../assets/img-gallery3.png";
-import img4 from "../assets/img-gallery4.png";
-import img5 from "../assets/img-gallery5.png";
+import img1 from "../assets/img-gallery1.jpg";
+import img2 from "../assets/img-gallery2.jpg";
+import img3 from "../assets/img-gallery3.jpg";
+import img4 from "../assets/img-gallery4.jpg";
+import img5 from "../assets/img-gallery5.jpg";
 import img6 from "../assets/img-gallery6.png";
 import img7 from "../assets/img-gallery7.png";
 import img8 from "../assets/img-gallery8.png";
@@ -45,7 +45,7 @@ export default function Gallery() {
           img13={img13}
         />
         <CardGallery6
-          title={"Good Documentation"}
+          title={"Delivery Rod"}
           img14={img14}
           img15={img15}
           img16={img16}
