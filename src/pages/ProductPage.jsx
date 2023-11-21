@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from "axios";
 import ProductCard from "../components/ProductCard";
+import Footer from "../components/Footer";
+
 const ProductPage = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState();
@@ -15,14 +17,14 @@ const ProductPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await axios.get(
-        "https://encouraging-gold-trousers.cyclic.app/api/products"
+        "https://fine-teal-sea-urchin-cuff.cyclic.app/api/products"
       );
       // console.log(response.data.data);
       setProducts(response.data.data);
     };
     const fetchCategories = async () => {
       const response = await axios.get(
-        "https://encouraging-gold-trousers.cyclic.app/api/categories"
+        "https://fine-teal-sea-urchin-cuff.cyclic.app/api/categories"
       );
       setCategories(response.data.data);
     };
@@ -45,7 +47,7 @@ const ProductPage = () => {
   return (
     <>
       <Navbar />
-      <main className="section mt-14">
+      <main className="section my-14">
         <section className="section px-5 font-semibold flex flex-col md:flex-row gap-8 md:gap-0 justify-between items-center">
           <h2 className="text-black-2 text-3xl">All Product</h2>
           <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-5 items-center">
@@ -94,9 +96,9 @@ const ProductPage = () => {
                 id={item._id}
               />
             ))}
-          
         </section>
       </main>
+      <Footer />
     </>
   );
 };

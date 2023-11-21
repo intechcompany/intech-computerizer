@@ -13,7 +13,7 @@ export default {
         'black-1': '#000000',
         'black-2': '#232323',
         'black-3': '#2C2C2C',
-        'red-1': '#F2E1DE'
+        'red-1': '#F2E1DE',
         'gray-1': '#F2E1DE'
       },
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Button from "../components/Button";
+import Footer from "../components/Footer";
 
 function formatRupiah(angka) {
   var reverse = angka.toString().split("").reverse().join(""),
@@ -36,7 +37,7 @@ export default function ProductDetailPage() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await axios.get(
-        `https://encouraging-gold-trousers.cyclic.app/api/products/${id}`
+        `https://fine-teal-sea-urchin-cuff.cyclic.app/api/products/${id}`
       );
       console.log(data.data);
       setData(data.data.data);
@@ -46,7 +47,7 @@ export default function ProductDetailPage() {
   return (
     <>
       <Navbar />
-      <main className="section px-5 md:px-0">
+      <main className="section px-5 md:px-0 pt-10">
         {data && (
           <>
             <section className="flex flex-col w-full px-5 gap-3 md:gap-10">
@@ -117,7 +118,9 @@ export default function ProductDetailPage() {
 
             <section className="flex flex-col md:flex-row w-full justify-between items-center px-5 gap-16 md:gap-5 mt-40 mb-40">
               <div className="w-full md:w-1/2 flex flex-col gap-16 ">
-                <h1 className="text-3xl font-semibold text-center md:text-left md:w-1/2">{data.name}</h1>
+                <h1 className="text-3xl font-semibold text-center md:text-left md:w-1/2">
+                  {data.name}
+                </h1>
                 <div className="flex flex-col md:flex-row items-center gap-10">
                   <p className="text-2xl font-semibold">
                     {formatRupiah(data.sell_price)}
@@ -140,6 +143,7 @@ export default function ProductDetailPage() {
           </>
         )}
       </main>
+      <Footer />
     </>
   );
 }
