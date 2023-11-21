@@ -5,6 +5,7 @@ import CardGallery2 from "./CardGallery2";
 import CardGallery3 from "./CardGallery3";
 import CardGallery4 from "./CardGallery4";
 import CardGallery5 from "./CardGallery5";
+import CardGallery6 from "./CardGallery6";
 
 import img1 from "../assets/img-gallery1.jpg";
 import img2 from "../assets/img-gallery2.jpg";
@@ -22,7 +23,6 @@ import img13 from "../assets/img-gallery13.png";
 import img14 from "../assets/img-gallery14.png";
 import img15 from "../assets/img-gallery15.png";
 import img16 from "../assets/img-gallery16.png";
-import CardGallery6 from "./CardGallery6";
 
 export default function Gallery() {
   return (
