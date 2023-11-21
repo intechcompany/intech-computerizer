@@ -14,20 +14,34 @@ export default function Hero() {
             Find your dream laptop and professional service.
           </h1>
         </div>
-        <div className="lg:w-1/2">
-          <div className="grid grid-cols-6 gap-5">
-            <div className="col-start-1 md:col-start-2 col-span-2  ...">
-              <img src={imgHero3} alt="" />
+        <div className="lg:w-1/2 flex flex-col gap-5">
+          <div className="grid grid-cols-7 md:grid-cols-9 gap-5 lg:h-52">
+            <div className="rounded-2xl overflow-hidden col-start-1 md:col-start-4 col-span-2 ...">
+              <img
+                src={imgHero3}
+                alt=""
+                className="h-full w-full object-cover"
+              />
             </div>
-            <div className="bg-gray-1 rounded-xl col-end-7 col-span-4 md:col-span-3 ...">
-              <img src={imgHero2} alt="" className="rounded-tr-xl" />
+            <div className="bg-red-1 rounded-2xl overflow-hidden md:col-end-10 col-span-5 md:col-span-4 ...">
+              <img
+                src={imgHero2}
+                alt=""
+                className="rounded-2xl overflow-hidden h-full w-full object-contain"
+              />
             </div>
+          </div>
+          <div className="grid grid-cols-7 gap-5">
             <div className="rounded-xl flex flex-col gap-6 md:gap-16 lg:gap-8 xl:gap-16 items-center justify-center bg-primary col-start-1 col-span-2 ...">
               <img src={iconDesk} alt="" className="w-10 md:w-16" />
               <img src={iconUser} alt="" className="w-10 md:w-16" />
             </div>
-            <div className="col-end-7 col-span-4 ...">
-              <img src={imgHero1} alt="" />
+            <div className="col-end-8 col-span-5 ...">
+              <img
+                src={imgHero1}
+                alt=""
+                className="rounded-2xl overflow-hidden h-full w-full object-cover"
+              />
             </div>
           </div>
         </div>
