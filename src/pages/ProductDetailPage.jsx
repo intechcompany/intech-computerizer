@@ -76,22 +76,22 @@ export default function ProductDetailPage() {
                 </div>
               </div>
             </section>
-            <section className="flex flex-col md:flex-row w-full justify-between items-start px-5 gap-5 mt-20">
-              <div className="w-full md:w-6/12">
-                <h1 className="text-3xl font-semibold w-full md:w-7/12 leading-[4rem] text-center md:text-left">
+            <section className="flex flex-col w-full justify-start items-start px-5 gap-5 mt-20">
+              <div className="w-full ">
+                <h1 className="text-3xl font-semibold w-full leading-[4rem] text-center md:text-left">
                   {data.name}
                 </h1>
               </div>
-              <div className="w-full md:w-6/12">
+              <div className="w-full">
                 <p className="text-sm font-montserrat text-gray-800 font-thin text-center md:text-justify leading-8">
                   {data.description}
                 </p>
               </div>
             </section>
 
-            <section className="flex flex-col-reverse md:flex-row w-full justify-between items-start px-5 gap-5 mt-40 ">
-              <div className="w-full md:w-1/2 md:pr-36">
-                <ul className="flex flex-col justify-start gap-8 md:gap-16">
+            <section className="flex flex-col-reverse w-full justify-start items-start px-5 gap-5 mt-40 ">
+              <div className="w-full">
+                <ul className="flex flex-col justify-start gap-8">
                   {data.keypoints &&
                     data.keypoints.map((item, i) => {
                       return (
@@ -105,23 +105,23 @@ export default function ProductDetailPage() {
                     })}
                 </ul>
               </div>
-              <div className="w-full md:w-1/2 md:pl-10 flex flex-col gap-24">
+              <div className="w-full flex flex-col gap-24">
                 <h2 className="text-3xl text-center md:text-left font-semibold leading-[3rem]">
                   Specifications of <br /> {data.name}
                 </h2>
-                <p className="md:w-3/4 text-center  text-sm font-montserrat text-gray-800 font-thin md:text-justify leading-8">
+                <p className=" text-center  text-sm font-montserrat text-gray-800 font-thin md:text-justify leading-8">
                   There are several advantages that you can achieve when you own
                   this laptop
                 </p>
               </div>
             </section>
 
-            <section className="flex flex-col md:flex-row w-full justify-between items-center px-5 gap-16 md:gap-5 mt-40 mb-40">
-              <div className="w-full md:w-1/2 flex flex-col gap-16 ">
-                <h1 className="text-3xl font-semibold text-center md:text-left md:w-1/2">
+            <section className="flex flex-col w-full justify-start items-center px-5 gap-16 md:gap-5 mt-40 mb-40">
+              <div className="w-full flex flex-col gap-16 ">
+                <h1 className="text-3xl font-semibold text-center md:text-left">
                   {data.name}
                 </h1>
-                <div className="flex flex-col md:flex-row items-center gap-10">
+                <div className="flex flex-col items-center gap-10">
                   <p className="text-2xl font-semibold">
                     {formatRupiah(data.sell_price)}
                   </p>
@@ -130,7 +130,7 @@ export default function ProductDetailPage() {
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
+              <div className="w-full ">
                 <div className="w-full flex justify-center rounded-3xl overflow-hidden">
                   <img
                     className="w-96 object-cover h-80 bg-primary p-8 rounded-3xl"
